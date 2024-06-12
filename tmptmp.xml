@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/app_item_width"
+    android:layout_height="wrap_content"
+    android:padding="7.5dp">
+
+    <View android:id="@+id/v_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_item_height_shadow"
+        android:background="@color/background_gradient_start"
+        android:visibility="gone"/>
+
+    <ImageView android:id="@+id/iv_card_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_item_height"
+        android:scaleType="fitXY"
+        android:background="@color/app_card_background"/>
+    <!--android:elevation="2dp"-->
+
+    <ImageView android:id="@+id/app_card_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_item_height"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/app_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/app_card_icon"
+        android:textStyle="normal"
+        android:textColor="@color/color_white"
+        android:lineSpacingExtra="-4sp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:maxLines="1"
+        tools:text="Title"/>
+
+</RelativeLayout>
